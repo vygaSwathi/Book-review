@@ -7,7 +7,7 @@ const reviewRouter = require('./routes/ReviewRouter.js');
 const logger = require('./middlewares/loggers.js');
 
 const app = express();
-const PORT = process.env.MONGO_URI|5000;
+const PORT = process.env.MONGO_URI||5000;
 
 app.use(express.json());
 app.use(cors());
